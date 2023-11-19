@@ -2,6 +2,7 @@ package cookie.tropicraft.item;
 
 import cookie.tropicraft.Tropicraft;
 import cookie.tropicraft.TropicraftConfig;
+import cookie.tropicraft.TropicraftPreLaunch;
 import cookie.tropicraft.block.TropicraftBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.entity.player.EntityPlayer;
@@ -20,7 +21,7 @@ public class ItemDrinkColada extends ItemDrink {
 	private void seasonTimeShift(World world, Season season, int sunsetTime, int nightTime) {
 		if (world.seasonManager.getCurrentSeason() == season && world.dimension.id != TropicraftConfig.cfg.getInt("Tropicraft.tropicsDimID"))
 			if (world.getWorldTime() > sunsetTime && world.getWorldTime() < nightTime)
-				dimensionShift(Tropicraft.tropicsDimension.id);
+				dimensionShift(TropicraftPreLaunch.tropicsDimension.id);
 	}
 
     @Override

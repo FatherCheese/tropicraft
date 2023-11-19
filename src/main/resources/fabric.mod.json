@@ -28,6 +28,9 @@
     ],
 		"terrain-api": [
 			"cookie.tropicraft.compat.terrainapi.TerrainAPIPlugin"
+		],
+		"preLaunch": [
+			"cookie.tropicraft.TropicraftPreLaunch"
 		]
   },
   "mixins": [
